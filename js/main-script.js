@@ -63,7 +63,7 @@ hiddenUpload.onchange = () => {
                             return 0;
                         }
                         option=option.toLowerCase();
-                        image2.src = "/Assets/"+option+".png";
+                        image2.src = "Assets/"+option+".png";
                         image2.onload = function() {
                         ctx.globalCompositeOperation = 'lighten';
                         ctx.drawImage(image2,

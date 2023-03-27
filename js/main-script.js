@@ -62,14 +62,14 @@ hiddenUpload.onchange = () => {
                             filter.style.margin='100px';
                             return 0;
                         }
-                        image2.src = "/Assets/"+option+".png"                 
+                        option=option.toLowerCase();
+                        image2.src = "/Assets/"+option+".png";
                         image2.onload = function() {
                         ctx.globalCompositeOperation = 'lighten';
                         ctx.drawImage(image2,
                             canvas.width / 2 - image1.width / 2,
                             0, image1.width, image1.height);
                         resultImage.src = canvas.toDataURL("image/png",1.0);
-
                       };
                     };
 

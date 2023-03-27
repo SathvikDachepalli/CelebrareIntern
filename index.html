@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Cropper</title>
+    <title>Celebrare | Sathvik Dachepalli</title>
     <link rel="stylesheet" href="css/cropper.css">
     <link rel="stylesheet" href="css/main-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,10 +16,34 @@
   <header class="p-3 text-bg-dark">
     <div class="container-header">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <img src="https://sathvikdachepalli.github.io/CelebrareIntern/Assets/logo.png" alt="" width="150em">
+        <img src="https://sathvikdachepalli.github.io/CelebrareIntern/Assets/logo.png" class="mx-lg-3" alt="" width="150em">
+          <a href="#" class="mx-6 text-dark btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Walk Through ></a>
+        </ul>
       </div>
     </div>
   </header>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Follow these steps</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <video width="100%" height="100%" controls>
+              <source src="Assets/walkthrough.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <br>
+            Watch this in your fullscreen for better experience.😊
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="container">
         <div class="image-container">
             <div class="image-workspace">

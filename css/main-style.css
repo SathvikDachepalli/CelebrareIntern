@@ -1,0 +1,193 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.container {
+    width: 960px;
+    height: 600px;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/* image area and preview */
+.image-container {
+    padding: 20px;
+    width: 677px;
+    height: calc(100% - 100px);
+    border-right: 1px solid rgba(255, 255, 255, 0.239);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.239);
+}
+
+.image-workspace {
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.preview-container {
+    border: 2px solid rgba(255, 255, 255, 0.239);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 263px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-cover {
+    overflow: hidden;
+}
+
+.preview-container span {
+    position: absolute;
+    top: 66px;
+    left: 70px;
+    color: white;
+}
+
+.action-button {
+    display: flex;
+    bottom: 0px;
+}
+
+.action-button .upload,
+.action-button .download {
+    display: block;
+    width: 170px;
+    height: 35px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.129);
+    color: white;
+    border-radius: 3px;
+    outline: none;
+    transition-duration: .2s;
+    font-family: 'Maven Pro', sans-serif;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.action-button .upload:active,
+.action-button .download:active {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.result-image {
+    position: absolute;
+    margin-top: 2em;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.filter {
+    min-width: 500px;
+    min-height: 500px;
+    position: relative;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.filter img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    align-content: center;
+}
+
+#canvas {
+    visibility: hidden;
+}
+
+.action-button .filter-btn{
+    display: block;
+    width: 132px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.129);
+    color: white;
+    border-radius: 3px;
+    outline: none;
+    transition-duration: .2s;
+    font-family: 'Maven Pro', sans-serif;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.action-button .dropdown{
+    align-content: center;
+    margin-top: 10px;
+    height: 35px;
+    width: 38px;
+    color:white;
+    background-color: rgba(255, 255, 255, 0.129);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dropdown {
+    background-color: #f1f1f1;
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #bbacac
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.btn:hover,
+.dropdown:hover .btn {
+    background-color: rgb(61, 56, 56)
+}
